@@ -217,7 +217,7 @@ public class Inventory {
      */
     public synchronized boolean useIngredients(Recipe r) {
     	if (enoughIngredients(r)) {
-	    	Inventory.coffee += r.getAmtCoffee();
+	    	Inventory.coffee -= r.getAmtCoffee();
 	    	Inventory.milk -= r.getAmtMilk();
 	    	Inventory.sugar -= r.getAmtSugar();
 	    	Inventory.chocolate -= r.getAmtChocolate();
@@ -234,18 +234,18 @@ public class Inventory {
      */
     public String toString() {
     	StringBuffer buf = new StringBuffer();
-    	buf.append("Coffee: ");
-    	buf.append(getCoffee());
-    	buf.append("\n");
-    	buf.append("Milk: ");
-    	buf.append(getMilk());
-    	buf.append("\n");
-    	buf.append("Sugar: ");
-    	buf.append(getSugar());
-    	buf.append("\n");
-    	buf.append("Chocolate: ");
-    	buf.append(getChocolate());
-    	buf.append("\n");
+		buf.append("Chocolate: ");
+		buf.append(getChocolate());
+		buf.append("\n");
+		buf.append("Coffee: ");
+		buf.append(getCoffee());
+		buf.append("\n");
+		buf.append("Milk: ");
+		buf.append(getMilk());
+		buf.append("\n");
+		buf.append("Sugar: ");
+		buf.append(getSugar());
+		buf.append("\n");
     	return buf.toString();
     }
 }
