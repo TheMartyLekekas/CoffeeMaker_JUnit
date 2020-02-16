@@ -25,7 +25,7 @@ public class InventoryTest extends TestCase {
         rec1.setPrice("50");
 
         rec2 = new Recipe();
-        rec2.setName("WrongCoffee");
+        rec2.setName("TooMuchCoffee");
         rec2.setAmtChocolate("1");
         rec2.setAmtCoffee("33");
         rec2.setAmtMilk("1");
@@ -41,7 +41,7 @@ public class InventoryTest extends TestCase {
             inv.addChocolate("11");
             assertEquals(31, inv.getChocolate());
         } catch (InventoryException e) {
-
+            fail("InventoryException should not be thrown");
         }
     }
     public void testAddChocolateException() {
@@ -56,15 +56,14 @@ public class InventoryTest extends TestCase {
 
     public void testAddCoffee() {
         try {
-            inv.addCoffee("5");
-            assertEquals(25, inv.getCoffee());
+            inv.addCoffee("0");
+            assertEquals(20, inv.getCoffee());
         } catch (InventoryException e) {
-
+            fail("InventoryException should not be thrown");
         }
     }
     public void testAddCoffeeException() {
         try {
-            inv.addCoffee("-1");
             inv.addCoffee("x");
             fail("InventoryException should be thrown");
         } catch (InventoryException e) {
@@ -78,13 +77,12 @@ public class InventoryTest extends TestCase {
             inv.addMilk("5");
             assertEquals(25, inv.getMilk());
         } catch (InventoryException e) {
-
+            fail("InventoryException should not be thrown");
         }
     }
     public void testAddMilkException() {
         try {
-            inv.addMilk("-1");
-            inv.addMilk("x");
+            inv.addMilk("");
             fail("InventoryException should be thrown");
         } catch (InventoryException e) {
             //success if thrown
@@ -97,13 +95,12 @@ public class InventoryTest extends TestCase {
             inv.addSugar("5");
             assertEquals(25, inv.getSugar());
         } catch (InventoryException e) {
-
+            fail("InventoryException should not be thrown");
         }
     }
     public void testAddSugarException() {
         try {
-            inv.addSugar("-1");
-            inv.addSugar("x");
+            inv.addSugar(null);
             fail("InventoryException should be thrown");
         } catch (InventoryException e) {
             //success if thrown

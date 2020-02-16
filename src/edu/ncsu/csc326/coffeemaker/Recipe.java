@@ -155,7 +155,26 @@ public class Recipe {
      * @return String
      */
     public String toString() {
-    	return name;
+		StringBuffer buf = new StringBuffer();
+		buf.append("Recipe name: ");
+		buf.append(getName());
+		buf.append("\n");
+		buf.append("Price: ");
+		buf.append(getPrice());
+		buf.append("\n");
+		buf.append("Chocolate: ");
+		buf.append(getAmtChocolate());
+		buf.append("\n");
+		buf.append("Coffee: ");
+		buf.append(getAmtCoffee());
+		buf.append("\n");
+		buf.append("Milk: ");
+		buf.append(getAmtMilk());
+		buf.append("\n");
+		buf.append("Sugar: ");
+		buf.append(getAmtSugar());
+		buf.append("\n");
+		return buf.toString();
     }
 
 	@Override
