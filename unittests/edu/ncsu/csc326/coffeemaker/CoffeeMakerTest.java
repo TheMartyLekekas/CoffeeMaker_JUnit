@@ -2,6 +2,7 @@ package edu.ncsu.csc326.coffeemaker;
 
 import edu.ncsu.csc326.coffeemaker.exceptions.InventoryException;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 /**
  * 
@@ -16,6 +17,7 @@ public class CoffeeMakerTest extends TestCase {
 	private Recipe r2;
 	private Recipe r3;
 	private Recipe r4;
+	private Recipe newr;
 
 	protected void setUp() throws Exception {
 		cm = new CoffeeMaker();
@@ -55,6 +57,14 @@ public class CoffeeMakerTest extends TestCase {
 		r4.setAmtMilk("1");
 		r4.setAmtSugar("1");
 		r4.setPrice("65");
+
+		newr = new Recipe();
+		newr.setName("NewCoffee");
+		newr.setAmtChocolate("3");
+		newr.setAmtCoffee("3");
+		newr.setAmtMilk("3");
+		newr.setAmtSugar("3");
+		newr.setPrice("30");
 		
 		super.setUp();
 	}
@@ -75,10 +85,28 @@ public class CoffeeMakerTest extends TestCase {
 			//success if thrown
 		}
 	}
+
+	public void testCheckInventory() {
+		assertEquals("Chocolate: 15\nCoffee: 15\nMilk: 15\nSugar: 15\n", cm.checkInventory());
+	}
 	
 	public void testMakeCoffee() {
 		cm.addRecipe(r1);
 		assertEquals(25, cm.makeCoffee(0, 75));
 	}
 
+
+	public void testAddRecipe() {
+		assertTrue("Successfully added new recipe to the book", cm.addRecipe(newr));
+	}
+
+	public void testDeleteRecipe() {
+		cm.addRecipe(r1);
+		assertEquals("Coffee",cm.deleteRecipe(0));
+	}
+
+	public void testEditRecipe() {
+		cm.addRecipe(r1);
+		assertEquals("Coffee", cm.editRecipe(0, newr));
+	}
 }

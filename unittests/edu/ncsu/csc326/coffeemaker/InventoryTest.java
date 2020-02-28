@@ -108,7 +108,7 @@ public class InventoryTest extends TestCase {
     }
 
     public void testEnoughIngredients() {
-            assertTrue(inv.enoughIngredients(rec1));
+                assertTrue(inv.enoughIngredients(rec1));
     }
     public void testUseIngredients() {
         inv.useIngredients(rec1);
