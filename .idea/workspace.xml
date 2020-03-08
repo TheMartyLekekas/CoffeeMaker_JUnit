@@ -42,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.CoffeeMakerTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ncsu.csc326.coffeemaker.Main" />
       <module name="CoffeeMaker_JUnit" />
@@ -81,8 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CoffeeMakerTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CoffeeMakerTest" />
         <item itemvalue="JUnit.All in CoffeeMaker_JUnit" />
       </list>
     </recent_temporary>
@@ -105,21 +105,21 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="515" y="263" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1474.864@0.0.1474.864" timestamp="1581799199230" />
-    <state width="1431" height="250" key="GridCell.Tab.0.bottom" timestamp="1581799326182">
+    <state width="1431" height="420" key="GridCell.Tab.0.bottom" timestamp="1583678115937">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="250" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1581799326182" />
-    <state width="1431" height="250" key="GridCell.Tab.0.center" timestamp="1581799326182">
+    <state width="1431" height="420" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1583678115937" />
+    <state width="1431" height="420" key="GridCell.Tab.0.center" timestamp="1583678115937">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="250" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1581799326182" />
-    <state width="1431" height="250" key="GridCell.Tab.0.left" timestamp="1581799326182">
+    <state width="1431" height="420" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1583678115937" />
+    <state width="1431" height="420" key="GridCell.Tab.0.left" timestamp="1583678115937">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="250" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1581799326182" />
-    <state width="1431" height="250" key="GridCell.Tab.0.right" timestamp="1581799326182">
+    <state width="1431" height="420" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1583678115937" />
+    <state width="1431" height="420" key="GridCell.Tab.0.right" timestamp="1583678115937">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="250" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1581799326182" />
+    <state width="1431" height="420" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1583678115937" />
   </component>
 </project>
